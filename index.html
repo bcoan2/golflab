@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
         <link rel="stylesheet" href="style.css">
     <title>GOLF Lab - GROUP 2</title>
 </head>
@@ -30,24 +30,21 @@
                             MEMBERS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink2">
-                            <li><a class="dropdown-item" href="https://github.com/anhnguyen148/gameweb"
-                                    target="_blank">Brody Coan</a></li>
-                            <li><a class="dropdown-item" href="https://github.com/anhnguyen148/dogegamev2"
-                                    target="_blank">William Thompson</a></li>
-                            <li><a class="dropdown-item" href="https://github.com/anhnguyen148/namefact"
-                                    target="_blank">Tram Nguyen</a></li>
+                            <li><a class="dropdown-item" target="_blank">Brody Coan</a></li>
+                            <li><a class="dropdown-item" target="_blank">William Thompson</a></li>
+                            <li><a class="dropdown-item" target="_blank">Tram Nguyen</a></li>
                         </ul>
                     </li>
-                    <a class="nav-link"
-                        href="#"
-                        id="navbarDarkDropdownMenuLink1" target="_blank">
-                        SOURCE CODE
-                    </a>
-                    <a class="nav-link"
-                        href="#"
-                        id="navbarDarkDropdownMenuLink1" target="_blank">
-                        VALIDATE CHECKER
-                    </a>
+                    <li>
+                        <a class="nav-link" href="https://github.com/anhnguyen148/golflab" id="navbarDarkDropdownMenuLink1" target="_blank">
+                            SOURCE CODE
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fanhnguyen148.github.io%2Fgolflab%2F" id="navbarDarkDropdownMenuLink1" target="_blank">
+                            VALIDATE CHECKER
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -55,31 +52,42 @@
 
     <!--Landing Area-->
     <div class="container mb-5" id="textContainer">
-        <div class="row mt-5">
-            <div class="col align-self-end">
-                <div>
-                    <img id="console" src="./assets/controller.png" alt="a gaming controller">
-                </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 align-self-end">
+                <img class="img-fluid" id="console" src="./assets/controller.png" alt="a gaming controller">
             </div>
-            <div class="col align-self-start">
-                <div>
-                    <p id="welcome"><strong>Hello!</strong></p>
+            <div class="col-lg-6 col-md-12 align-self-start">
+                    <p id="welcome"><strong>Wellcome to Game Page</strong></p>
                     <a href="#page-content"><button id="main-btn">PLAY GAME!</button></a>
-                </div>
-            </div>            
+            </div>
         </div>
     </div>
 
     <!--Game Cards Area-->
-    <main class="page-content" id="page-content"></main>
-    
+    <main class="page-content mt-5 mb-5" id="page-content"></main>
+
+    <!--Footer-->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <p class="text-center">Copyright @2023 | <a href="https://www.una.edu" target="_blank">University of North Alabama</a></p>
+        <ul class="social_footer_ul">
+            <li><a href="https://twitter.com/north_alabama" target="_blank"><i class="fab fa-twitter"></i>UNA
+                    twitter</a></li>
+            <li><a href="http://www.picuki.com/profile/north_alabama" target="_blank"><i
+                        class="fab fa-instagram"></i>UNA Instagram</a></li>
+        </ul>
+        <p>
+            <a href="https://gist.github.com/barrycumbie/de4aa0fcb0cad79a870305240d726cd0" class="card-link"
+                target="cis376">|🚀 CIS 376 launchpad 🚀|</a>
+            <a href="https://gist.github.com/barrycumbie/e2491ce65ed1b8711ce78fc897028597" class="card-link"
+                target="golflab">|🚀 Golf Lab 🚀|</a>
+            <a href="https://www.linkedin.com/groups/12058862/" class="card-link" target="linkedin">|💻 CSIS Linked In Page 💻|</a>
+        </p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
     <script src="./index.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script> -->
 </body>
+
 </html>
