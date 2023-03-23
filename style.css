@@ -4,6 +4,8 @@
 :root {
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: 'Rubik', sans-serif;
+    --font-serif: 'Cardo', serif;
 }
 
 /* * {
@@ -12,8 +14,7 @@
 
 html,
 body {
-    background-image: linear-gradient(180deg, rgb(251, 252, 243), #fef1bf);
-    /* max-width: 1040px; */
+    background-image: linear-gradient(180deg, rgb(251, 252, 243), rgb(243, 248, 201));
 }
 
 body {
@@ -89,14 +90,12 @@ body {
 
 #welcome {
     font-family: 'VT323', monospace;
-    font-size: 9rem;
+    font-size: 10rem;
     margin-top: 2rem;
 }
 
 #console {
     width: 70%;
-    height: auto;
-    z-index: 1;
 }
 
 #main-btn {
@@ -145,7 +144,7 @@ body {
     padding: 1rem;
     width: 100%;
     text-align: center;
-    box-shadow: 4px 4px 2px 1px rgb(255, 187, 160);
+    box-shadow: 4px 4px 2px 1px rgb(255, 129, 79);
 }
 
 @media (min-width: 600px) {
@@ -288,15 +287,14 @@ body {
     font-family: 'VT323', monospace;
 }
 
-#btn {
+.btn {
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 0rem;
     padding: 0.3rem 1.5rem;
     font-size: 1.2rem;
     /* font-weight: bold; */
     /* letter-spacing: 0.025rem; */
     text-transform: uppercase;
-    text-decoration: none;
     font-weight: bold;
     color: white;
     background-color: rgb(214, 61, 0);
@@ -304,12 +302,12 @@ body {
     font-family: 'VT323', monospace;
 }
 
-#btn:hover {
+.btn:hover {
     background-color: rgb(20, 118, 123);
     color: white;
 }
 
-#btn:focus {
+.btn:focus {
     outline: 1px dashed yellow;
     outline-offset: 3px;
 }
@@ -362,17 +360,4 @@ body {
     .card:focus-within .content>*:not(.title) {
         transition-duration: 0s;
     }
-}
-
-/*************************/
-/********* Footer ********/
-/*************************/
-footer {
-    width: 100%;
-}
-
-footer ul li a,
-footer p a {
-    text-decoration: none;
-    color: rgb(137, 213, 217);
 }

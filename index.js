@@ -1,7 +1,4 @@
 $(document).ready(function () {
-	// make the controller draggable
-	$("#console").draggable();
-
 	// cards hover effect
 	$('.card').delay(1800).queue(function (next) {
 		$(this).removeClass('hover');
@@ -26,7 +23,7 @@ $(document).ready(function () {
 						<div class="content">
 							<h2 class="title">${el.name}</h2>
 							<p class="copy">${el.author}'s Game</p>
-							<a href="${el.link}" target="_blank" id ="btn">PLAY</a>
+							<a href="${el.link}" target="_blank"><button class="btn">PLAY</button></a>
 						</div>
 					</div>
 				`);
